@@ -19,12 +19,12 @@ char *getComponent (urlComponents *comp, const int component)
 {
 	char *out = NULL;
 	regmatch_t *pmatch = &comp->pmatch[component];
-    size_t len = pmatch->rm_eo - pmatch->rm_so;
+    	size_t len = pmatch->rm_eo - pmatch->rm_so;
 
-    if (!(out = (char *) malloc (sizeof (char) * len+1)))
-    	return NULL;
+	if (!(out = (char *) malloc (sizeof (char) * len+1)))
+		return NULL;
 
-    memcpy (out, comp->url + pmatch->rm_so, len);
+	memcpy (out, comp->url + pmatch->rm_so, len);
 	out[len] = '\0';
 
 	return out;
