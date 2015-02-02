@@ -58,9 +58,8 @@ int parseUrl (urlComponents *comp, char *url)
 		return err;
 	}
 
-	/* ref */
-	comp->pmatch = pmatch;
-	comp->url	 = url;
+	comp->pmatc	= pmatch;
+	comp->url	= url;
 
 	regfree (&preg);
 	return 0;
