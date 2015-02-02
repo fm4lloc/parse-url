@@ -34,7 +34,7 @@
 #define HOST_ER       "(" IPV6REF_ER "|" HOSTNAME_ER ")"
 #define PORT_ER       "(:([0-9]+))?"
 
-#define HOSTPORT_ER	HOST_ER PORT_ER
+#define HOSTPORT_ER   HOST_ER PORT_ER
 
 /* User Information and Authority */
 #define	USERNAME_ER   "([^:/?#@]*)"
@@ -55,6 +55,6 @@
 #define FRAGMENT_ER   "(#(.*))?$"
 
 /* URL */
-#define URL_ER			SCHEME_ER AUTHORITY_ER HIER_PART_ER QUERY_ER FRAGMENT_ER
+#define URL_ER        SCHEME_ER AUTHORITY_ER HIER_PART_ER QUERY_ER FRAGMENT_ER
 
 #endif /* REGEXURL_H_ */
