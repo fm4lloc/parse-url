@@ -1,10 +1,5 @@
 #
-# Simple generic Makefile 1.0 for parse-url
-#
-# ======================================================================
-# This Makefile was written with bad practices. Not recommend  using 
-# it on big projects.
-# ======================================================================
+# Simple generic Makefile for parse-url
 #
 
 #-----------------------------------------------------------------------
