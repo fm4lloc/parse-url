@@ -5,8 +5,8 @@
 #-----------------------------------------------------------------------
 # EDIT HERE
 #-----------------------------------------------------------------------
-RM			= /bin/rm -f
-CC			= gcc
+RM		= /bin/rm -f
+CC		= gcc
 DEFS		= -O3 -Wall -fmessage-length=0
 PROGNAME	= parseurl
 INCLUDES	= 
@@ -16,7 +16,7 @@ LIBS		=
 DEFINES 	= $(INCLUDES) $(DEFS)
 CFLAGS  	= $(DEFINES)
 
-SRC			= $(shell find ./src -type f -name "*.c")
+SRC		= $(shell find ./src -type f -name "*.c")
 HEADERS		= $(shell find ./src -type f -name "*.h")
 OBJS		= $(SRC:.c=.o)
 
