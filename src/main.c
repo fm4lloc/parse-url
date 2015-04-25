@@ -18,7 +18,7 @@ int main (int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf (stderr, "usage: %s url\nexample:"
-			"\n%s 'https://foo:bar@zaz.com:12/go/en/p.php?a=b&c=d%%20pong#2'\n\n", argv[0], argv[0]);
+			"\n%s 'scheme://username:password@subdomain.domain.tld:80/path/file-name.suffix?query-string#hash'\n\n", argv[0], argv[0]);
 		return EXIT_SUCCESS;
 	}
 
