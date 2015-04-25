@@ -5,19 +5,20 @@ Usage: ./parseurl url
 
 Example:
 ```
-./parseurl 'https://foo:bar@zaz.com:12/go/en/p.php?a=b&c=d%20pong#2'
+./parseurl 'scheme://username:password@subdomain.domain.tld:80/path/file-name.suffix?query-string#hash'
 ```
 output:
 ```
-+SCHEME: https
-+AUTHORITY: foo:bar@zaz.com:12
- +USERINFO: foo:bar
-  -USERNAME: foo
-  -PASSWORD: bar
- -HOST: zaz.com
- -PORT: 12
-  +PATH: /go/en/p.php
-   -FILENAME: p.php
-   -QUERY: a=b&c=d%20pong
-   -FRAGMENT: 2
++SCHEME: scheme
++AUTHORITY: username:password@subdomain.domain.tld:80
+ +USERINFO: username:password
+  -USERNAME: username
+  -PASSWORD: password
+ -HOST: subdomain.domain.tld
+ -PORT: 80
+  +PATH: /path/file-name.suffix
+   -FILENAME: file-name.suffix
+   -QUERY: query-string
+   -FRAGMENT: hash
+
 ```
